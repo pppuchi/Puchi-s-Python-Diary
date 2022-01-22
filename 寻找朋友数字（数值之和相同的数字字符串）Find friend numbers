@@ -1,0 +1,14 @@
+s=input("input some numbers with ,")
+s=s.split(',')
+d={}
+for num in s:
+    sumNum=sum(map(int,num))
+    d[sumNum]=d.get(sumNum,[])+[num]
+    '''if sumNum not in d:
+        d[sumNum]=[num]
+    else:
+        d[sumNum]+=[num]'''
+result=[]
+lst=sorted(d.items())
+result=map(sorted,[x[1] for x in lst])
+print(*result,sep='\n')
