@@ -1,3 +1,9 @@
+Find friend numbers (the same sum adding all numbers) and output them together from lowest to highest
+寻找朋友数字并按照大小顺序一起输出（数值之和相同的数字字符串）
+
+
+
+
 s=input("input some numbers with ,")
 s=s.split(',')
 d={}
